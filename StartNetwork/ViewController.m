@@ -27,6 +27,9 @@
     requestObject.typeRequest = @"POST";
     // some parms if need
     [requestObject.paremsRequest setObject:[NSNumber numberWithInt:876] forKey:@""];
+    // save data to device
+    requestObject.cashing = YES;
+    requestObject.nameRequest = @"First_Request";
     
     network = [[NetworkRequestClass alloc]init];
     network.delegate = self;

@@ -49,6 +49,7 @@
 		F0B568931874236A001F3CFB /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B568861874236A001F3CFB /* SBJsonUTF8Stream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F0B568941874236A001F3CFB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B568881874236A001F3CFB /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F0B568971874286E001F3CFB /* RequestParmClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B568961874286E001F3CFB /* RequestParmClass.m */; };
+		F0B5689E1874698C001F3CFB /* CDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B5689D1874698C001F3CFB /* CDFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,8 @@
 		F0B568881874236A001F3CFB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		F0B568951874286E001F3CFB /* RequestParmClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestParmClass.h; path = NetworkRequest/RequestParmClass.h; sourceTree = "<group>"; };
 		F0B568961874286E001F3CFB /* RequestParmClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestParmClass.m; path = NetworkRequest/RequestParmClass.m; sourceTree = "<group>"; };
+		F0B5689C1874698C001F3CFB /* CDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFileManager.h; sourceTree = "<group>"; };
+		F0B5689D1874698C001F3CFB /* CDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,11 +257,11 @@
 		F0B5676A18741B34001F3CFB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F0B5686E18742156001F3CFB /* NetworkRequestClass */,
 				F0B5674018741AFC001F3CFB /* AppDelegate.h */,
 				F0B5674118741AFC001F3CFB /* AppDelegate.m */,
 				F0B5674918741AFC001F3CFB /* ViewController.h */,
 				F0B5674A18741AFC001F3CFB /* ViewController.m */,
-				F0B5686E18742156001F3CFB /* NetworkRequestClass */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 		F0B5686E18742156001F3CFB /* NetworkRequestClass */ = {
 			isa = PBXGroup;
 			children = (
+				F0B5689818746644001F3CFB /* FileManager */,
 				F0B5686B1874214F001F3CFB /* NetworkRequestClass.h */,
 				F0B5686C1874214F001F3CFB /* NetworkRequestClass.m */,
 				F0B568951874286E001F3CFB /* RequestParmClass.h */,
@@ -351,6 +355,15 @@
 				F0B568881874236A001F3CFB /* SBJsonWriter.m */,
 			);
 			name = JSON;
+			sourceTree = "<group>";
+		};
+		F0B5689818746644001F3CFB /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F0B5689C1874698C001F3CFB /* CDFileManager.h */,
+				F0B5689D1874698C001F3CFB /* CDFileManager.m */,
+			);
+			name = FileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +480,7 @@
 				F0B568891874236A001F3CFB /* NSObject+SBJson.m in Sources */,
 				F0B5683D18741CE4001F3CFB /* ASIInputStream.m in Sources */,
 				F0B5673E18741AFC001F3CFB /* main.m in Sources */,
+				F0B5689E1874698C001F3CFB /* CDFileManager.m in Sources */,
 				F0B5686D1874214F001F3CFB /* NetworkRequestClass.m in Sources */,
 				F0B568911874236A001F3CFB /* SBJsonStreamWriterState.m in Sources */,
 				F0B5683E18741CE4001F3CFB /* ASINetworkQueue.m in Sources */,
@@ -706,6 +720,7 @@
 				F0B5676518741AFC001F3CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0B5676618741AFC001F3CFB /* Build configuration list for PBXNativeTarget "StartNetworkTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +729,7 @@
 				F0B5676818741AFC001F3CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

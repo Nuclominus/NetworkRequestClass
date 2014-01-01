@@ -20,8 +20,10 @@
 }
 
 - (void)sendPostRequest:(RequestParmClass*)params{
+    
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:params.urlRequest]];
     request.tag = params.idRequest;
+    params.cashing?(cash=YES,saveByName=params.nameRequest):NO;
     
     if(params.typeRequest!=NULL){
         [request setRequestMethod:params.typeRequest];
@@ -44,6 +46,9 @@
 
 - (void)requestFinished:(ASIHTTPRequest *)request {
     NSMutableArray *respone = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableContainers error:nil];
+    if (cash) {
+        [CDFileManager writeToFile:saveByName arrayToFile:respone];
+    }
     [self.delegate requestAnswer:respone withID:request.tag];
 }
 

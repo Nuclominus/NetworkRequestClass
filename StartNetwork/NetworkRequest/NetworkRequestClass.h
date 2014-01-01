@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ASIFormDataRequest.h"
 #import "RequestParmClass.h"
+#import "CDFileManager.h"
 
 @protocol NetworkRequestDelegate <NSObject>
 -(void)requestAnswer:(NSMutableArray*)answer withID:(int)tag;
@@ -16,7 +17,8 @@
 @end
 
 @interface NetworkRequestClass : NSObject{
-    
+    BOOL cash;
+    NSString * saveByName;
 }
 
 @property(strong,nonatomic) id delegate;

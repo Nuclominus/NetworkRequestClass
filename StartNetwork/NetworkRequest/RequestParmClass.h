@@ -10,9 +10,12 @@
 
 @interface RequestParmClass : NSObject
 
+@property(strong,nonatomic) NSString * nameRequest;
 @property(strong,nonatomic) NSString * urlRequest;
 @property(strong,nonatomic) NSString * typeRequest;
 @property(strong,nonatomic) NSMutableDictionary * paremsRequest;
 @property(nonatomic) int idRequest;
+@property(nonatomic) BOOL cashing;
+
 
 @end
