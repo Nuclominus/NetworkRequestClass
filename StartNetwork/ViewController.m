@@ -35,7 +35,6 @@
 
 #pragma mark - Network answer
 -(void)requestAnswer:(NSMutableArray *)answer withID:(int)tag{
-    // id/tag need if we use more than one request
      NSLog(@"respone %d ===> %@",tag,answer);
 }
 #pragma mark -
