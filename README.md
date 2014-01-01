@@ -1,4 +1,4 @@
 NetworkRequestClass
 ===================
 
-small add-on ASIHTTPRequest for faster and easier than sending
+NetworkRequestClass is small add-on ASIHTTPRequest  for a quick and simple sending request
