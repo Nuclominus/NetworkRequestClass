@@ -45,7 +45,7 @@
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request {
-    NSMutableArray *respone = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableContainers error:nil];
+    id respone = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingMutableContainers error:nil];
     if (cash) {
         [CDFileManager writeToFile:saveByName arrayToFile:respone];
     }

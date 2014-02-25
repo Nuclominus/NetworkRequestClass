@@ -12,7 +12,7 @@
 #import "CDFileManager.h"
 
 @protocol NetworkRequestDelegate <NSObject>
--(void)requestAnswer:(NSMutableArray*)answer withID:(int)tag;
+-(void)requestAnswer:(id)answer withID:(int)tag;
 
 @end
 

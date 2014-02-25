@@ -23,12 +23,14 @@
     // url
     requestObject.urlRequest = @"";
     // id/tag request need if we have more the one requests
+    // use some enum
     requestObject.idRequest = 1;
     requestObject.typeRequest = @"POST";
     // some parms if need
     [requestObject.paremsRequest setObject:[NSNumber numberWithInt:876] forKey:@""];
     // save data to device
     requestObject.cashing = YES;
+    // name by save .plist
     requestObject.nameRequest = @"First_Request";
     
     network = [[NetworkRequestClass alloc]init];
@@ -37,7 +39,7 @@
 }
 
 #pragma mark - Network answer
--(void)requestAnswer:(NSMutableArray *)answer withID:(int)tag{
+-(void)requestAnswer:(id)answer withID:(int)tag{
      NSLog(@"respone %d ===> %@",tag,answer);
 }
 #pragma mark -
